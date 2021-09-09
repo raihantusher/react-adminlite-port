@@ -11,6 +11,8 @@ import Card from './comp/card.js'
 import CategoryForm from './forms/CategoryForm';
 import ProductForm from './forms/ProductForm';
 import VariationForm from './forms/VariationForm';
+import CategoryList from './list/CategoryList';
+import CategoryEditForm from './forms/CategoryEditForm';
 
 import React, { Component } from 'react';
  import {
@@ -20,6 +22,7 @@ import React, { Component } from 'react';
   Link,
   useParams
 } from "react-router-dom";
+import ProductList from './list/ProductList';
 
 
 
@@ -53,35 +56,45 @@ import React, { Component } from 'react';
               <div className="content-wrapper">
               
                   <Breadcrumbs />
-                  <button onClick={this.clickMe} className="btn btn-primary btn-sm">hello</button>
 
                   <Switch>
-                    <Route exact path="/">
-                      <Home />
-                    </Route>
-                    <Route path="/about">
-                      <About />
-                    </Route>
-                    <Route path="/dashboard/:id">
-                      <Dashboard />
-                    </Route>
-                    <Route path="/forms">
-                      <Forms />
-                    </Route>
-                    <Route path="/variations">
-                      <VariationForm />
-                    </Route>
+                      <Route exact path="/">
+                        <Home />
+                      </Route>
+                      <Route path="/about">
+                        <About />
+                      </Route>
+                      <Route path="/dashboard/:id">
+                        <Dashboard />
+                      </Route>
+                      <Route path="/forms">
+                        <Forms />
+                      </Route>
+                      <Route path="/variations">
+                        <VariationForm />
+                      </Route>
 
-                    <Route path="/variations/add">
-                      <VariationForm />
-                    </Route>
+                      <Route path="/variations/add">
+                        <VariationForm />
+                      </Route>
 
-                    <Route path="/add-product">
-                      <ProductForm />
-                    </Route>
-                    <Route path="/add-category">
-                      <CategoryForm />
-                    </Route>
+                      <Route path="/add-product">
+                        <ProductForm />
+                      </Route>
+                      <Route path="/products">
+                          <ProductList  />
+                      </Route>
+
+                      <Route path="/add-category">
+                        <CategoryForm />
+                      </Route>
+                      <Route path="/categories/:id/edit">
+                        <CategoryEditForm />
+                      </Route>
+                      <Route path="/categories">
+                          <CategoryList />
+                      </Route>
+
                   </Switch>
               </div>
 

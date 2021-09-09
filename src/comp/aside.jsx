@@ -70,51 +70,51 @@ const Aside = () => {
           
           
           <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-table"></i>
+            <Link to="#" className="nav-link">
+              <i className="nav-icon fas fa-table"></i>
               <p>
                 Product
                 
-                <i class="fas fa-angle-left right"></i>
-                <span class="right badge badge-info">5</span>
+                <i className="fas fa-angle-left right"></i>
+                <span className="right badge badge-info">5</span>
               </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <Link to="/add-product" class="nav-link">
+            </Link>
+            <ul className="nav nav-treeview">
+              <li className="nav-item">
+                <Link to="/add-product" className="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Add Product</p>
                 </Link>
               </li>
-              <li class="nav-item">
-                <Link to="/" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
+              <li className="nav-item">
+                <Link to="/products" className="nav-link">
+                  <i className="far fa-circle nav-icon"></i>
                   <p>All Products</p>
                 </Link>
               </li>
             </ul>
           </li>
 
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-table"></i>
+          <li className="nav-item">
+            <a href="#" className="nav-link">
+              <i className="nav-icon fas fa-table"></i>
               <p>
                 Category
                 
-                <i class="fas fa-angle-left right"></i>
-                <span class="right badge badge-info">5</span>
+                <i className="fas fa-angle-left right"></i>
+                <span className="right badge badge-info">5</span>
               </p>
             </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
+            <ul className="nav nav-treeview">
+              <li className="nav-item">
                 <Link to="/add-category" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
+                  <i className="far fa-circle nav-icon"></i>
                   <p>Add Category</p>
                 </Link>
               </li>
-              <li class="nav-item">
-                <Link to="/" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
+              <li className="nav-item">
+                <Link to="/categories" className="nav-link">
+                  <i className="far fa-circle nav-icon"></i>
                   <p>All Categories</p>
                 </Link>
               </li>
